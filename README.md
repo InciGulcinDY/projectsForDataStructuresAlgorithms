@@ -8,7 +8,7 @@ Data structures and algorithms(Kodluyoruz-Frontend101 Training)
 # Step-4: [2,16,22,27] [18,6]
 # Step-5: [2,16,18,22,27] [6]
 # Step-6: [2,6,16,18,22,27]
-# ** Time complexity: 2(n) + 3 = 2(6) + 3 = 15
+** Time complexity: 2(n) + 3 = 2(6) + 3 = 15
 # Best Case: n = 6
 # Average Case: n^2 = 36
 # Worst Case: n^2
