@@ -41,3 +41,80 @@ Data structures and algorithms(Kodluyoruz-Frontend101 Training)
 
 # Time complexity: 
 * Best-Average-Worst Case: O(n log n) = O(6 log 6)
+--------------------------------------------------
+# Project 3
+# The steps of Binary-Search-Tree [7,5,1,8,3,6,0,9,4,2]
+* Step-1: Start with the first element, 7, as the root of the tree.
+Tree:
+7
+* Step-2: Compare the second element, 5, with the root (7) and insert it as the left child since it is smaller.
+Tree:
+7
+/
+5
+* Step-3: Compare the third element, 1, with the root (7) and insert it as the left child of the left subtree since it is smaller than 7 and 5.
+Tree:
+     7
+  /    
+ 5      
+/ 
+1  
+* Step-4: Compare the fourth element, 8, with the root (7) and insert it as the right child since it is greater.
+Tree:
+     7
+  /    \
+ 5      8
+/ 
+1  
+* Step-5: Compare the fifth element, 3, with the root (7). Since it is smaller, move to the left child (5). Compare it with 5 and insert it as the left child since it is smaller.
+Tree:
+     7
+  /    \
+ 5      8
+/ \
+1  3
+* Step-6: Compare the sixth element, 6, with the root (7). Since it is greater, move to the right child (8). Compare it with 8 and insert it as the left child since it is smaller.
+Tree:
+     7
+  /    \
+ 5      8
+/ \    /
+1  3  6
+* Step-7: Compare the seventh element, 0, with the root (7). Since it is smaller, move to the left child (5), then to its left child (1). Compare it with 1 and insert it as the left child since it is smaller.
+Tree:
+         7
+      /    \
+     5      8
+    / \    /
+   1  3  6
+  /
+0  
+* Step-8: Compare the eighth element, 9, with the root (7). Since it is greater, move to the right child (8), then insert it as the right child since it is greater.
+Tree:
+         7
+      /    \
+     5      8
+    / \    / \
+   1  3  6    9
+  /
+0 
+* Step-9: Compare the ninth element, 4, with the root (7). Since it is smaller, move to the left child (5), then to its right child (3). Compare it with 3 and insert it as the right child since it is greater.
+Tree:
+         7
+      /    \
+     5      8
+    / \    / \
+   1  3  6    9
+  /    \
+0       4
+* Step-10: Compare the tenth element, 2, with the root (7). Since it is smaller, move to the left child (5), then to its left child (1), and finally to its right child (3). Compare it with 3 and insert it as the left child since it is smaller.
+Tree:
+         7
+      /    \
+     5      8
+    / \    / \
+   1  3  6    9
+  / \   \
+0    2   4
+
+
